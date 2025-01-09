@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties</title>
+    <style>
+        :root{
+            /* variables declared inside root are accessible everywhere */
+            --primary-color: green;
+            --danger-color: red;
+            --shadow-color: black;
+            --maxw: 1500px;
+        }
+        .container{
+            display: flex;
+            border: 5px solid red;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: var(--maxw);
+            font-size: 3rem;
+            text-align: center;
+            margin: auto;
+            background-color: var(--danger-color);
+        }
+        .box{
+            /* Format for declaring a variable: --var_name: var_value; */
+            /* but this var is only valid inside this block */
+            --box-color: rgb(204, 255, 0);
+            height: 30%;
+            width: 30%;
+            padding: 30px;
+            margin: 20px;
+            border: 3px solid var(--primary-color);
+            background-color: var(--box-color);
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px var(--shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>Forms tut</h2>
+    <form action="backend.php">
+        <label for="name"></label>
+        <div>
+            Name: <input type="text" name="myName" id="name">
+        </div><br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div><br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div><br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div><br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+            <!-- the type 'number' also eccepts the letter e -->
+        </div><br>
+        <div>
+            <label for="eligibility"> Are u eligible?</label>
+            <input type="checkbox" name="myEligibility" id="eligibility">
+        </div><br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> 
+            Female <input type="radio" name="myGender">
+            <!-- since I have used the same name 'myGender' for both entries, I can tick any one of them at a time -->
+        </div><br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+
+
+
+        <hr>
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="password">Password</label>
+        <div>
+            <input type="password" name="myPasswd" id="password">
+        </div>
+        <br>
+        <!-- We can select only one of the genders here since the name is same i.e. myGender -->
+        <!-- If we use different names that we can select multiple genders -->
+        <div>
+            Gender <br>
+            <label for="gender1">Male</label>
+            <input type="radio" name="myGender" id="gender1">
+            <label for="gender2">Female</label>
+            <input type="radio" name="myGender" id="gender2">
+            <label for="gender3">Other</label>
+            <input type="radio" name="myGender" id="gender3">
+        </div>
+        <br>
+        <!-- We can use the letter 'e' here for exponentiation -->
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="bonus" id="bonus">
+        </div>
+        <br>
+        <label for="dateTime">Date & Time</label>
+        <div>
+            <input type="datetime-local" name="date&time" id="dateTime">
+        </div>
+        <br>
+        <div>
+            <label for="u">Are u eligible?</label>
+            <input type="checkbox" name="myEligibility" id="u" checked>
+        </div>
+        <br>
+        <label for="write">Write about yourself</label>
+        <div>
+            <textarea name="About" id="write" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="car">Favourite Car</label>
+        <div>
+            <select name="myCar" id="car">
+                <option value="lambo">Lamborghini</option>
+                <option value="mrcd">Mercedes</option>
+                <option value="ind">Indica</option>
+                <option value="bmw">BMW</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit"> <input type="reset" value="Reset form">
+        </div>
+    </form>
+</body>
+
+</html>

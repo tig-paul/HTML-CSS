@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-fit and Minmax in grid</title>
+    <style>
+        *{
+            margin: 0px;
+
+        }
+        .container{
+            font-style: italic;
+            font-size: 2rem;
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: repeat(4,70fr); */
+
+            /* Auto-fit makes the layout responsive by fitting the width automatically */
+            /* And we can set the minimum and maximum width using Minmax */
+            grid-template-columns: repeat(Auto-fit,Minmax(300px,400px));
+        }
+        .box{
+            border: 2px solid rgb(0, 0, 0);
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>

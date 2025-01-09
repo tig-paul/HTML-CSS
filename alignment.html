@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Ubuntu&diaplay=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            /* padding and margin are included in the width */
+        }
+        body{
+            background-color: #c1bfec;
+            font-family: Ubuntu;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid #37329b;
+            border-top-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+            margin: 80px auto;
+            padding: 3px 5px;
+            background-color: #e7fcc2;
+        }
+        .item{
+            border: 2px solid #c7451c;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin: 30px 15px;
+            padding: 20px 28px;
+            color: #3134de;
+            background-color: #92eaf0;
+        }
+        .head{
+            color: #034136;
+            margin-bottom: 8px;
+            margin-top: 0px;
+        }
+        #fruits{
+            float: left;
+            width: 40%;
+        }
+        #computer{
+            float: right;
+            width: 43%;
+        }
+        #stationary{
+            float: left;
+            width: 88%;
+            clear: both;
+        }
+        #grocery{
+            clear: both;
+        }
+        p, h3{
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify; /* the property written at the last is considered */
+        }
+        h1{
+            margin: 15px 200px 0px 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Ankit's store</h1>
+        <div id="fruits" class="item">
+            <h3 class="head">Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ipsa. Commodi quasi quisquam rerum dolores sequi veniam repudiandae maiores quibusdam natus repellat distinctio, ab sapiente non dolore inventore maxime omnis voluptate nam tenetur eos. Doloribus nemo quae odio ullam odit.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3 class="head">Computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minima laborum provident, facere ab quidem eligendi non, commodi ipsam architecto perferendis eos blanditiis numquam excepturi molestiae, nemo corrupti veritatis nulla dicta dolorem illum aliquam beatae repellat esse. Cum accusamus eveniet consectetur harum aliquid culpa perspiciatis.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3 class="head">Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ipsa. Commodi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quaerat, delectus consequuntur repudiandae quisquam nesciunt vel doloremque reiciendis mollitia necessitatibus velit consequatur ut, nemo soluta? Numquam ipsam molestiae blanditiis! Doloribus! sapiente non dolore inventore maxime omnis voluptate nam tenetur eos. Doloribus nemo quae odio ullam odit.</p>
+        </div>
+
+        <div id="grocery" class="item">
+            <h3 class="head">Grocery</h3>
+            <p id="GroceryPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ipsa. Commodi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quaerat, delectus consequuntur repudiandae quisquam nesciunt vel doloremque reiciendis mollitia necessitatibus velit consequatur ut, nemo soluta? Numquam ipsam molestiae blanditiis! Doloribus! sapiente non dolore inventore maxime omnis voluptate nam tenetur eos. Doloribus nemo quae odio ullam odit.</p>
+        </div>
+    </div>
+</body>
+</html>

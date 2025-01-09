@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector and more designing</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&diaplay=swap">
+    <style>
+        .container {
+            border: 3px solid gold;
+            background-color: rgb(60 224 245);
+            padding: 10px 30px;
+            margin: 50px auto;
+            width: 700px;
+        }
+
+        .btn {
+            color: black;
+            background-color: #6c8cf6;
+            padding: 2.5px;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: Ubuntu;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            /* ensures that the underline under the 'read more' doesn't appear */
+        }
+
+        a:hover {
+            color: blue;
+            background-color: #5075eb;
+            border: 2px solid red;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        h2 {
+            margin: 14px auto;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h2>This is the heading</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim beatae amet, exercitationem totam
+            consequatur aliquam vero tempora odit quam eveniet ullam rem asperiores adipisci, quas officiis. Nobis earum
+            eaque delectus vero. Accusantium, nihil repudiandae. Officia dolore minus porro, incidunt vero velit, minima
+            impedit laboriosam aliquam cumque quidem modi, qui blanditiis?</p>
+        <a href="https://facebook.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>

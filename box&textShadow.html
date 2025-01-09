@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        .container {
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        .card {
+            padding: 0px 20px;
+            margin: 0px 20px;
+        }
+
+        .card h2{
+            /* text-shadow: same as box-shadow but doesn't have any spread */
+            text-shadow: 3px 3px 1px #bbd732;
+        }
+        #card-1 {
+            /*  1.box-shadow: X-offset Y-offset color 
+                2.box-shadow: X-offset Y-offset blur color
+                3.box-shadow: X-offset Y-offset blur spread color */
+
+            /*  - By default X-offset is in right and Y-offset in bottom
+                - giving a negative sign to the offsets changes their direction
+                - color can also be given in 'rgba' form where 'a' decides darkness of the color 
+                - we can add multiple box-shadow one after another separated by comma*/
+
+            box-shadow: 10px 9px 9px red, 10px 13px 0px black;
+        }
+        
+        #card-2 {
+            /* 'inset' makes the shadow inside the box */
+            box-shadow: inset 11px 20px 105px 20px rgba(83, 171, 100,0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam mollitia consectetur ducimus eos
+                iusto id nulla doloribus nam repudiandae aspernatur ipsa dolores temporibus voluptates molestiae nemo
+                explicabo, quidem doloremque eum.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam mollitia consectetur ducimus eos
+                iusto id nulla doloribus nam repudiandae aspernatur ipsa dolores temporibus voluptates molestiae nemo
+                explicabo, quidem doloremque eum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

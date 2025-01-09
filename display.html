@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        header{
+            border: 2px solid red;
+            margin: auto;
+            width: 1200px;
+            height: 300px;
+        }
+        /* since image is an inline element we can't directly put it in the center, so first we have to make it a block element and then use margin:auto & width and it will come to the center */
+        img{
+            display: block;
+            margin: auto;
+            width: 23%;
+            height: 50%;
+        }
+        h2{
+            text-align: center;
+            /* used to move the text in the center */
+            margin: 10px;
+        }
+        .box{
+            border: 2px solid red;
+            margin: 18px;
+            padding: 2px 10px;
+            background: rgb(170, 166, 166);
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box; /* this box-sizing makes sure that the width we have set remains consistent with margin and padding otherwise margin and padding changes the width from what it was given*/
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="project1/img/logo.jpg" alt="">
+        <h2>Welcome to my Blog</h2>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt magni iusto aut praesentium ducimus ipsam nihil nobis perferendis harum tempora obcaecati libero corrupti aliquam laudantium in maxime, labore possimus velit vero architecto assumenda iure. Quas eveniet unde magni illo adipisci ducimus ratione laudantium accusamus!</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt magni iusto aut praesentium ducimus ipsam nihil nobis perferendis harum tempora obcaecati libero corrupti aliquam laudantium in maxime, labore possimus velit vero architecto assumenda iure. Quas eveniet unde magni illo adipisci ducimus ratione laudantium accusamus!</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt magni iusto aut praesentium ducimus ipsam nihil nobis perferendis harum tempora obcaecati libero corrupti aliquam laudantium in maxime, labore possimus velit vero architecto assumenda iure. Quas eveniet unde magni illo adipisci ducimus ratione laudantium accusamus!</p>
+        </div>
+    </div>
+</body>
+</html>

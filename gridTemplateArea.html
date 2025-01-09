@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template area</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            font-size: 2rem;
+            display: grid;
+            grid-gap: 1rem;
+            /* Every row must have same number of colomns */
+            grid-template-areas: 
+            'Navbar Navbar Navbar Navbar'
+            'Section Section Section Aside'
+            'Footer Footer Footer Footer';
+        }
+        #navbar{
+            grid-area: Navbar;
+        }
+        #section{
+            grid-area: Section;
+        }
+        #aside{
+            grid-area: Aside;
+        }
+        footer{
+            grid-area: Footer;
+        }
+        .item{
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(201, 102, 102);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quisquam expedita tenetur molestiae eum aperiam assumenda rem sequi atque? Repellendus itaque totam fuga quae quod repellat obcaecati atque, aperiam quos? Dicta quae ipsa eaque, tempore minima dolore quia sapiente nesciunt et explicabo, tempora corporis repellat! Dignissimos, architecto vel iusto repudiandae numquam ratione perferendis sapiente, eos ipsum aut suscipit consequuntur tempore est quasi culpa? Itaque in, molestias dolore nulla dolorum quasi minima ipsum blanditiis sed earum! Facilis sapiente optio rerum odio iure sunt nulla distinctio exercitationem veniam, molestiae suscipit cumque ipsum adipisci quod delectus in quibusdam, excepturi natus tempora sint! Praesentium!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores error, deleniti placeat neque ipsa distinctio dignissimos omnis, laborum amet architecto cumque facere officiis nemo molestias similique? Nulla nisi inventore, repellat eius at dolores tenetur, alias illum eligendi possimus expedita ducimus?</div>
+        <footer class="item">Lorem Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus adipisci explicabo dignissimos sequi expedita. Dolorem similique consequatur dolore minima sunt quos perferendis odio, quae magnam delectus ullam velit asperiores eveniet expedita placeat veritatis minus possimus eligendi commodi iste nisi fuga vero! Quae recusandae temporibus, laboriosam nisi commodi tenetur quasi neque culpa provident impedit soluta rerum eius! Necessitatibus ipsum dicta error dolor quisquam fuga repellendus esse illum neque quia, consequuntur voluptatem? Vitae ipsa unde, sed amet aliquid, eos doloribus quibusdam quas nisi explicabo natus fugiat provident quaerat qui dolor blanditiis. Architecto amet debitis ea veritatis laudantium cumque deleniti quam autem impedit.sectetur adipisicing elit. Odio commodi facere, ut aperiam rerum at fugiat tenetur explicabo, aspernatur mollitia labore? Eveniet repellat eos nobis quaerat itaque recusandae quisquam quas aperiam aut? Id, error? Ad eum amet totam hic non, exercitationem aliquid enim minima saepe consequatur. A maiores consequuntur aut sequi omnis corrupti rem ad et, asperiores possimus tenetur ratione molestiae fugiat dolorum voluptatem odit amet fugit molestias ipsum reprehenderit natus saepe fuga. A nostrum iste quod pariatur perspiciatis voluptatibus.ipsum dolor sit, amet consectetur adipisicing elit. Eum dolor vero at, rem sint vitae repudiandae! Laboriosam, facere perferendis. Illo consectetur magni quibusdam esse recusandae quisquam quod vitae a inventore?</footer>
+    </div>
+</body>
+</html>

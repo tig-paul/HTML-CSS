@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&diaplay=swap">
+    <style>
+        * {
+            font-family: Ubuntu;
+            /* box-sizing: border-box;
+            margin: 0;
+            padding: 0; */
+        }
+
+        .navbar{
+            width: 90%;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 30px auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            /* used to vanish the bullets */
+            margin: 4px 8px;
+        }
+        .navbar ul{
+            height: 30px;
+            /* width: 900px; */
+            overflow: auto; /* to ensure that the items stay inside the navbar border */
+            padding: 0px 20px;
+            margin-top: 8px;
+            margin-bottom: 1.5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #searchBox{
+            width: 132px;
+            float: right;
+            padding: 0px 16px;
+            /* border: 1px solid black; */
+            /* border-radius: 8px; */
+            font-weight: normal;
+        }
+        h1{
+            width: 500px;
+            margin: 2px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to CODEFORCES</h1>
+        <nav class="navbar">
+            <ul type="circle">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">CATALOG</a></li>
+                <li><a href="#">CONTESTS</a></li>
+                <li><a href="#">GYM</a></li>
+                <li><a href="#">PROBLEMSET</a></li>
+                <li><a href="#">GROUPS</a></li>
+                <li><a href="#">RATING</a></li>
+                <li><a href="#">EDU</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">CALENDER</a></li>
+                <li><a href="#">HELP</a></li>
+                <div id="searchBox">
+                    <input type="text" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

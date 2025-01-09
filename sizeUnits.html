@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            border: 3px solid red;
+            /* height: 850px;
+            width: 500px; */
+            height: 100vh; /* for controlling height we can use vh */
+            width: 80vw; /* for controlling width we can use vw or % */
+            width: 100%;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size: 4em; /* 4em means its font-size will be 4 times the font-size of its container i.e. 4*10=40px */
+            padding: 3em; /* padding will be 3 times the font-size of the element i.e. 3*40=120px */
+        }
+        #second{
+            font-size: 4rem; /* 4rem means its font-size will be 4 times the font-size of html i.e. 4*25=100px */
+            padding: 3rem; /* padding will be 3 times the font-size of html i.e. 3*25=75px */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">first heading</h1>
+        <h1 id="second">second heading</h1>
+        <h1 id="third">third heading</h1>
+    </div>
+</body>
+</html>

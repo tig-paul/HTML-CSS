@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector */
+        p{
+            border: 2px solid black;
+        }
+        /* id selector */
+        #redElement {
+            color: bisque;
+            background-color: green;
+        }
+        /* class selector */
+        .bgBlue{
+            color: white;
+            background-color: blue;
+        }
+        /* grouping selector */
+        footer,span{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS selectors</h1>
+    <p id="redElement">This is a paragraph that demonstrates css selectors</p>
+    <!-- id takes more precedence than class -->
+    <p id="redElement" class="bgBlue">This is another paragraph that demonstrates css selectors</p>
+    <div>
+        <p class="bgBlue">This is yet another paragraph that demonstrates css selectors</p>
+        <span>This is a span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>

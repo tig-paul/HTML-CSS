@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        h1{
+            border: 3px solid black;
+            text-align: center;
+            background-color: red;
+            font-weight: bold;
+        }
+        /* if p is contained by an li which is also contained by a div */
+        div li p{
+            background-color: green;
+        }
+        /* if p is right after an ul i.e. if p is the next sibling of an ul */
+        ul + p{
+            background-color: blue;
+            color: aliceblue;
+        }
+        /* if p is right after a div i.e. if p is the next sibling of a div */
+        div + p{
+            border: 7px solid purple;
+        }
+        /* if p is right inside any div i.e. if p is the direct child of any div */
+        div > p{
+            color: rgb(8, 213, 213);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is a paragraph inside li inside ul</p></li>
+                <li>This is inside li only</li>
+            </ul>
+            <p>This is another paragraph outside ul</p>
+        </div>
+        <p>This is an outer paragraph</p>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+</html>

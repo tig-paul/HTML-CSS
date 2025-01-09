@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with Grid</title>
+    <style>
+        .container{
+            font-size: 2rem;
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: repeat(Auto-fit,Minmax(300px,1fr)); */
+            grid-template-areas: 
+            'Navbar Navbar Navbar Navbar'
+            'Section Section Section Aside'
+            'Footer Footer Footer Footer';
+        }
+        nav{
+            grid-area: Navbar;
+        }
+        section{
+            grid-area: Section;
+        }
+        aside{
+            grid-area: Aside;
+        }
+        footer{
+            grid-area: Footer;
+            font-size: 3rem;
+        }
+        .bdr{
+            background-color: wheat;
+            border: 2px solid red;
+            padding: 25px;
+            text-align: center;
+        }
+        .box{
+            display: none;
+            text-align: center;
+            font-size: 2rem;
+        }
+        @media (max-width:600px) {
+            body{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media (min-width:600px) and (max-width:1300px){
+            body{
+                display: block;
+                background-color: gold;
+            }
+            .container{
+                grid-template-areas: 
+                'Navbar Navbar Navbar Navbar'
+                'Section Section Section Section'
+                'Aside Aside Aside Aside';
+            }
+            footer{
+                display: none;
+            }
+        }
+        @media (min-width:1300px) and (max-width:2100px){
+            body{
+                display: block;
+                background-color: green;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (min-width:2100px){
+            body{
+                display: block;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services </span>
+            <span>Contact Us</span>
+        </nav>
+        <section class="bdr">
+            <h2>Read our blogs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a autem corrupti dolorum laborum blanditiis qui aperiam ratione, quaerat sint. Neque temporibus in facilis laborum impedit ipsam eos, molestiae exercitationem mollitia sunt vero quam iusto ipsum! Voluptas vero sint omnis impedit sequi aliquid odit id iure veniam? In eveniet veniam consequatur, magni dicta ipsa modi. Omnis quos sapiente velit laboriosam temporibus pariatur incidunt modi numquam asperiores odio nesciunt placeat molestiae, itaque, dolorum autem doloremque eaque vitae deleniti illo aliquam veritatis blanditiis. Eos porro iste, et dolorem mollitia tempora obcaecati omnis! Asperiores corporis quidem molestias voluptatibus, tenetur magni provident.</p>
+        </section>
+        <aside class="bdr">
+            <h2>More about us</h2>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright 2025</footer>
+</body>
+</html>

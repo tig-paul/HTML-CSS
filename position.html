@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid red;
+            height: 700px;
+        }
+        .box {
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 3px 50px;
+            padding: 4px;
+            display: inline-block; /* ensures that the boxes are in a line */
+        }
+        h2 {
+            text-align: center;
+            margin: auto;
+        }
+        
+        /* CSS positions: static(default), absolute, relative, fixed and sticky */
+        /* the last one gets more preference */
+        #box3{
+            /* relative: shifts the element relative to its actual position and will create a gap in its actual position */
+            position: relative; 
+            
+            /* absolute: shifts the element relative to its parent's actual position and won't create any gap in its actual position */
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+
+            /* stay in its actual position */
+            /* position: static; */
+
+            /* stay fixed relative to the browser window */
+            /* position: fixed; */
+
+            /**/
+            /* position: sticky;
+            top: 2px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">These are my Boxes</h2>
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
